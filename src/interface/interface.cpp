@@ -374,8 +374,12 @@ private:
                 );
             }
             catch (...) {
-                // Ignora cabecalho
-                // ou linha invalida
+                cout << "\n";
+                cout
+                    << "Erro ao processar linha:\n";
+                cout
+                    << linha
+                    << "\n";
             }
         }
         arquivo.close();
