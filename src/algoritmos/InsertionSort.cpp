@@ -17,7 +17,6 @@ void insertionSort(
             dados[i];
         int j =
             i - 1;
-
         while (j >= 0) {
             bool maior = false;
             // ID

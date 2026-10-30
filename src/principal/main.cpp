@@ -1,18 +1,10 @@
-#include <windows.h>
+#include "../interface/interface.cpp"
 
-int iniciarInterface(
-    HINSTANCE hInstance,
-    int nCmdShow
-);
+int main() {
 
-int WINAPI WinMain(
-    HINSTANCE hInstance,
-    HINSTANCE,
-    LPSTR,
-    int nCmdShow
-) {
-    return iniciarInterface(
-        hInstance,
-        nCmdShow
-    );
+    Interface programa;
+
+    programa.executar();
+
+    return 0;
 }

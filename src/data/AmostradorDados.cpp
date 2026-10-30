@@ -9,7 +9,6 @@ vector<Imagem> selecionarAleatorios(
     int quantidade
 ) {
     vector<Imagem> amostra = dados;
-
     if (
         quantidade >
         static_cast<int>(amostra.size())
@@ -19,7 +18,6 @@ vector<Imagem> selecionarAleatorios(
     }
     random_device rd;
     mt19937 gerador(rd());
-
     shuffle(
         amostra.begin(),
         amostra.end(),

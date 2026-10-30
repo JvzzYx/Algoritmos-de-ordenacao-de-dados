@@ -8,6 +8,13 @@ private:
     int largura;
     int altura;
 public:
+    Imagem()
+        : id(0),
+        nome(""),
+        tamanho(0.0),
+        largura(0),
+        altura(0){
+    }
     Imagem(
         int id,
         std::string nome,

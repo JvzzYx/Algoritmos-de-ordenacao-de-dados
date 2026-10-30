@@ -3,15 +3,12 @@
 #include <sstream>
 #include <vector>
 #include <string>
-
 #include "../modelo/imagens.cpp"
-
 using namespace std;
 
 vector<Imagem> lerArquivoInterno() {
 
     vector<Imagem> dados;
-
     string caminho =
         "src/dados/dados.txt";
     ifstream arquivo(caminho);
@@ -32,7 +29,6 @@ vector<Imagem> lerArquivoInterno() {
         string strTamanho;
         string strAltura;
         string strLargura;
-
         if (
             !getline(ss, strId, ';') ||
             !getline(ss, nome, ';') ||
@@ -51,6 +47,7 @@ vector<Imagem> lerArquivoInterno() {
                 stoi(strAltura);
             int largura =
                 stoi(strLargura);
+                
             dados.push_back(
                 Imagem(
                     id,

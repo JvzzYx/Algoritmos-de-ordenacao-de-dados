@@ -89,7 +89,6 @@ void quickSortAuxiliar(
         }
     }
     if (esquerda < j) {
-
         quickSortAuxiliar(
             dados,
             esquerda,
